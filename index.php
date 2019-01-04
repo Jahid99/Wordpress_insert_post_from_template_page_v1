@@ -95,9 +95,11 @@ function _uploadImageToMediaLibrary($postID, $url, $alt = "blabla") {
 
 
 
-$attach_id = _uploadImageToMediaLibrary(12,'https://m.media-amazon.com/images/M/MV5BOTczOWUwN2YtYzZjMy00MDIzLWI0N2EtNzMyMjgyMmY3N2I3XkEyXkFqcGdeQXVyOTAwMTc5NA@@._V1_UY268_CR147,0,182,268_AL_.jpg');
+$attach_id_list = '1747,1738';
 
-    wp_insert_post(array('post_title' => 'some title', 'post_author' => 1, 'post_type' => 'movie', 'post_status' => 'publish', 'meta_input' => array( 'shift8_portfolio_posters_gallery' => $attach_id, 'themeum_movie_image_cover' => 1758,  'themeum_movie_actor' => array('phillip-guzman','richard-lukens')),'tax_input' => array( 'movie_cat' => 51)));
+$attach_id = _uploadImageToMediaLibrary(12,'https://m.media-amazon.com/images/M/MV5BMTg3MDA0NDQ3OV5BMl5BanBnXkFtZTgwMTg2NTAwMjI@._V1_SY1000_CR0,0,1348,1000_AL_.jpg');
+
+    wp_insert_post(array('post_title' => 'some title', 'post_author' => 1, 'post_type' => 'movie', 'post_status' => 'publish', 'meta_input' => array( 'shift8_portfolio_posters_gallery' => $attach_id_list, 'themeum_movie_image_cover' => 1758,  'themeum_movie_actor' => array('phillip-guzman','richard-lukens')),'tax_input' => array( 'movie_cat' => 51)));
 
 
  ?>
